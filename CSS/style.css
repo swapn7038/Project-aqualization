@@ -1,0 +1,120 @@
+/* =========== common styles =========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* @font-face {
+  font-family: "Duke_Fill";
+  font-weight: 400;
+  src: url(/assets/fonts/apex-legends/DukeFill_web.woff) format("woff");
+} */
+
+/* =========== css variables  =========== */
+
+:root {
+  --color-temp-one-one: #0a2647;
+  --color-temp-one-two: #144272;
+  --color-temp-one-three: #205295;
+  --color-temp-one-four: #2c74b3;
+
+  --color-temp-two-one: #fd8a8a;
+  --color-temp-two-two: #f1f7b5;
+  --color-temp-two-three: #a8d1d1;
+  --color-temp-two-four: #9ea1d4;
+
+  --color-temp-three-one: #eb455f;
+  --color-temp-three-two: #fcffe7;
+  --color-temp-three-three: #bad7e9;
+  --color-temp-three-four: #2b3467;
+}
+
+/* .main-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  display: grid;
+  place-content: center;
+  border: 4px solid red;
+} */
+
+.section-1-content {
+  display: flex;
+  position: relative;
+}
+
+#myVideo {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.section-1-info {
+  position: absolute;
+  margin: 10% 25%;
+  display: flex;
+  flex-direction: column;
+  /* border: 4px orange solid; */
+}
+
+.section-1-logo {
+  /* position: absolute; */
+  width: 50%;
+  margin: 0 25%;
+  /* border: 4px solid yellow; */
+}
+
+.section-1-content p {
+  width: 100%;
+  /* margin: 14% 28%; */
+  color: rgb(0, 255, 251);
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  text-align: center;
+  /* border: 4px solid red; */
+}
+
+.section-1-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  /* border: 4px solid rgb(183, 255, 0); */
+}
+
+.section-1-buttons a {
+  padding: 1rem;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-family: sans-serif;
+  background-color: rgb(255, 0, 0);
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  /* margin-top: 3rem; */
+  /* border: 2px solid rgb(255, 255, 255); */
+  transition: 0.5s;
+}
+
+.section-1-buttons a:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  /* border: 2px solid black; */
+}
+
+/* .section-1-buttons {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin: 33% 28%;
+  border: 3px solid red;
+} */
+
+/* .section-1-buttons a {
+  padding: 1rem 2rem;
+  border: 2px solid yellow;
+} */
