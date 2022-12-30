@@ -1,200 +1,63 @@
-/* =========== common styles =========== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* @font-face {
-  font-family: "Duke_Fill";
-  font-weight: 400;
-  src: url(/assets/fonts/apex-legends/DukeFill_web.woff) format("woff");
-} */
-
-/* =========== css variables  =========== */
+/* root variables */
 
 :root {
-  --color-temp-one-one: #0a2647;
-  --color-temp-one-two: #144272;
-  --color-temp-one-three: #205295;
-  --color-temp-one-four: #2c74b3;
-
-  --color-temp-two-one: #fd8a8a;
-  --color-temp-two-two: #f1f7b5;
-  --color-temp-two-three: #a8d1d1;
-  --color-temp-two-four: #9ea1d4;
-
-  --color-temp-three-one: #eb455f;
-  --color-temp-three-two: #fcffe7;
-  --color-temp-three-three: #bad7e9;
-  --color-temp-three-four: #2b3467;
+  --nav-color-main: #161616;
 }
 
-.section {
+.navbar {
   width: 100%;
-  height: 110vh;
-  /* border: 3px solid red; */
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1rem;
+  background-color: var(--nav-color-main);
 }
 
-.section-one-image {
-  background-image: url("../assets/images/aqualization-main.jpeg");
-  width: 100%;
-  height: 110vh;
-  position: relative;
+.nav_menu_logo {
+  display: flex;
 }
 
-.section__one__info {
-  position: absolute;
-  top: 79%;
-  left: 20%;
+.hamburger-menu {
+  color: white;
+  z-index: 10;
+  font-size: 0rem;
+  margin-right: 1rem;
+  /* border: 2px rgb(255, 255, 255) solid; */
+}
+
+.nav-logo {
+  color: rgb(255, 255, 255);
   font-family: sans-serif;
-  font-size: 2rem;
-  width: 50%;
-
-  color: rgb(0, 255, 229);
-  /* border: 3px solid red; */
-  text-align: center;
+  margin-top: 0.5rem;
+  /* border: 2px solid red;     */
 }
 
-/* buttons position */
-.buttons {
-  position: absolute;
-  width: 100%;
-  top: 90%;
-  /* align-items: center; */
-  text-align: center;
-  /* border: 3px solid red; */
-}
-
-/* glow-on-hover */
-
-.glow-on-hover {
-  width: 220px;
-  height: 50px;
-  border: none;
-  outline: none;
-  margin-top: 4rem;
-  color: rgb(0, 238, 255);
-  background: #111;
-  cursor: pointer;
-  position: relative;
-  z-index: 0;
+.nav-logo span {
+  color: rgb(255, 255, 255);
   font-size: 1.5rem;
-  margin-left: 2rem;
-  /* box-shadow: 4px 4px 8px rgb(0, 238, 255); */
-  border-radius: 10px;
 }
 
-.glow-on-hover:before {
-  content: "";
-  background: linear-gradient(
-    45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
-  );
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing 20s linear infinite;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
+.nav-btn {
+  margin-top: 0.5rem;
 }
 
-.glow-on-hover:active {
-  color: #000;
+.nav-btn:hover {
+  background-color: rgb(79, 49, 49);
 }
 
-.glow-on-hover:active:after {
-  background: transparent;
-}
-
-.glow-on-hover:hover:before {
-  opacity: 1;
-}
-
-.glow-on-hover:after {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #111;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
-}
-
-@keyframes glowing {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-
-/* Responsiveness */
-
-@media (max-width: 1022px) {
-  .section-one-image {
-    background-size: cover;
-  }
-}
-
-@media (max-width: 909px) {
-  .section-one-image {
-    width: 909px;
-    /* border: 4px solid blue; */
-  }
-
-  .section__one__info {
-    width: 90%;
-    margin: 0 4rem;
-    text-align: center;
-    left: 4rem;
-    /* border: 3px solid white; */
-  }
-
-  .buttons {
-    padding: 0;
-    width: 80%;
-    margin-top: 3rem;
-    margin-left: 3rem;
-    /* text-align: center; */
-    align-items: center;
-    position: absolute;
-
-    /* border: 4px solid red; */
-  }
-}
-
-@media (max-width: 576px) {
-  .section {
-    height: 120vh;
-  }
-  .section__one__info {
-    width: 100%;
-    margin-left: 8rem;
-    /* border: 5px solid rgb(175, 207, 16); */
-  }
-
-  .glow-on-hover {
-    margin-top: 2rem;
-  }
+.nav-btn a {
+  padding: 0.8rem 1rem;
+  background-color: tomato;
+  color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  border: 1px solid rgb(244, 0, 0);
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-family: sans-serif;
 }
