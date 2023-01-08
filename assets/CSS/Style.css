@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  list-style-type: none;
+  /* remove bullter lists */
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "BruceForever";
+  src: url("../Fonts/bruce-forever-font/BruceForeverRegular-X3jd2.ttf");
+}
+
+@font-face {
+  font-family: "Aromaticdreamdemo";
+  src: url("../Fonts/aromatic-dream-font/Aromaticdreamdemo-RpjYl.otf");
+}
+
+@font-face {
+  font-family: "AthachantrTrial";
+  src: url("../Fonts/athachantr-font/AthachantrTrialRegular-ow7mV.otf");
+}
+
+@font-face {
+  font-family: "aurademo";
+  src: url("../Fonts/aurademo-font/Aurademo-1Gvx4.ttf");
+}
+
+@font-face {
+  font-family: "GreatestDemo";
+  src: url("../Fonts/greatest-font/GreatestDemoRegular-3z74p.ttf");
+}
+
+@font-face {
+  font-family: "MonradokTrial";
+  src: url("../Fonts/monradok-font/MonradokTrialRegular-yweOe.otf");
+}
+
+/* root variables */
+
+:root {
+  --nav-color-main: #161616;
+}
+
+.top-nav-menu {
+  width: 100%;
+  height: 2rem;
+  background-color: #161616;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.top-nav-menu ul li a {
+  color: white;
+  margin-right: 10px;
+  font-family: BruceForever;
+  transition: 0.5s;
+}
+
+.top-nav-menu ul li a:hover {
+  color: rgb(214, 83, 54);
+}
+
+.menu {
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  /* Also define top position to make menu sticky, with position sticky */
+  /* border: 3px solid red; */
+}
+
+.menu-logo {
+  width: 10rem;
+  /* border: 3px solid red; */
+  display: grid;
+  place-content: center;
+}
+
+.menu-logo a {
+  width: 100%;
+  color: white;
+  font-weight: 600;
+  font-family: BruceForever;
+}
+
+nav {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: block; */
+  /* border: 3px solid rgb(255, 255, 255); */
+}
+
+.nav-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+
+.nav-list a {
+  color: white;
+  font-family: BruceForever;
+  font-size: 0.7rem;
+  transition: 0.3s;
+}
+
+.nav-list a:hover {
+  color: rgb(214, 83, 54);
+}
+
+.menu-btn {
+  padding: 0.8rem 1rem;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: red;
+  font-family: MonradokTrial;
+  color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  margin: 0.2rem -0.3rem;
+  transition: 0.3s;
+}
+
+.menu-btn:hover {
+  background-color: transparent;
+  border: 2px solid rgb(134, 132, 132);
+}
+
+.uil-arrow-to-bottom {
+  color: white;
+}
+
+/* Common styles */
+section {
+  width: 100%;
+  height: 100vh;
+  object-fit: fill;
+  display: grid;
+  place-content: center;
+  font-family: Aromaticdreamdemo;
+}
+
+.section-one {
+  background: url("../images/img-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-two {
+  background: url("../images/img-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* color: rgb(0, 0, 0); */
+}
+
+.section-header {
+  text-align: center;
+  font-size: 4rem;
+  margin: 1rem 0;
+  font-family: Aromaticdreamdemo;
+}
+
+.section-two-banner {
+  padding: 0 8rem;
+}
+
+/* =========== section-three ============= */
+.section-three {
+  height: 100vh;
+}
+
+.card-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  transition: 0.5s;
+  /* display: grid; */
+  /* place-content: center; */
+  /* border: 3px solid red; */
+}
+
+.card {
+  width: 30%;
+  height: 80vh;
+  background-color: rgb(55, 59, 61);
+  color: white;
+  border: 3px solid;
+  padding: 2rem;
+  font-family: MonradokTrial;
+  border-bottom: 10px solid red;
+}
+
+.card:hover {
+  background-image: url("../images/gaming-img-1.jpg");
+  background-size: cover;
+}
+
+.section-four {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #161616;
+  color: white;
+  transition: 0.4s;
+}
+
+.footer i {
+  font-size: 4rem;
+  margin: 0 2rem;
+  transition: 0.4s;
+  /* border: 3px solid; */
+}
+
+.footer .uil-instagram:hover {
+  color: #fa7e1e;
+
+  cursor: pointer;
+}
+
+.footer .uil-twitter-alt:hover {
+  color: #00acee;
+  cursor: pointer;
+}
+
+.footer .uil-facebook-f:hover {
+  color: #3b5998;
+  cursor: pointer;
+}
+
+.footer .uil-linkedin-alt:hover {
+  color: #3b5998;
+  cursor: pointer;
+}
