@@ -11,6 +11,83 @@
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
     <link rel="stylesheet" href="./assets/CSS/Style.css" />
+
+    <style>
+        ul {
+        padding: 0;
+        list-style: none;
+        background: transparent;
+        /* border: 2px solid red; */
+      }
+
+      ul li {
+        display: inline-block;
+        position: relative;
+        line-height: 21px;
+        text-align: left;
+      }
+
+      ul li a {
+        /* display: block; */
+        /* padding: 8px 25px; */
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+      }
+
+      ul li ul.dropdown {
+        width: 15rem;
+        background: rgba(10, 10, 10, 0.5);
+        display: none;
+        position: absolute;
+        /* border: 10px solid transparent; */
+        border: 20px solid transparent;
+        /* margin-top: 0.5rem; */
+        z-index: 999;
+        opacity: 0.8;
+        border-radius: 0.5rem;
+        /* display: flex;
+        justify-content: column;
+        align-items: center; */
+        transform-origin: center;
+        padding: 1rem;
+        transition: 1s;
+        animation: growOut 300ms ease-in-out forwards;
+        transform-origin: top left;
+        /* animation-delay: 5s; */
+      }
+
+      ul li ul.dropdown li a {
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+        font-family: sans-serif;
+        font-size: 1rem;
+        margin: 1rem 0;
+        /* opacity: 10; */
+        /* border: 2px solid rgb(255, 0, 0); */
+      }
+
+      ul li:hover ul.dropdown {
+        display: block;
+        transition: 0.5s;
+      }
+
+      ul li ul.dropdown li {
+        display: block;
+      }
+
+      @keyframes growOut {
+        0% {
+          transform: scale(0);
+        }
+        80% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+    </style>
   </head>
   <body>
     <div class="main-wrapper">
@@ -39,13 +116,13 @@
           <ul class="nav-list">
             <li>
               <a href="#">About</a>
-              <!-- <ul class="dropdown">
-                <li><a href="#">About Apex Aqualization</a></li>
+              <ul class="dropdown">
+                <li><a href="#">About Aqualization</a></li>
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#">PC Requirements</a></li>
                 <li><a href="#">Credits</a></li>
                 <li><a href="#">Accessibility</a></li>
-              </ul> -->
+              </ul>
             </li>
             <li>
               <a href="#">Modes</a>
@@ -58,12 +135,26 @@
             </li>
             <li>
               <a href="#">News&Media</a>
+              <ul class="dropdown">
+                <li><a href="#">Latest News</a></li>
+                <li><a href="#">Game Updates</a></li>
+                <li><a href="#">Latest News</a></li>
+              </ul>
             </li>
             <li>
               <a href="#">Community</a>
+              <ul class="dropdown">
+                <li><a href="#">Social</a></li>
+                <li><a href="#">Community </a></li>
+                <li><a href="#">Merchandise</a></li>
+              </ul>
             </li>
             <li>
               <a href="#">Compete</a>
+              <ul class="dropdown">
+                <li><a href="#">Compete</a></li>
+                <li><a href="#">Community Guidelines</a></li>
+              </ul>
             </li>
           </ul>
         </nav>
@@ -105,7 +196,7 @@
           <h1 class="section-header">Latest Features</h1>
           <!--  -->
           <div class="card-wrapper">
-            <div class="card">
+            <div class="card card-one">
               <div>
                 <img src="" />
               </div>
@@ -117,7 +208,7 @@
                 <h2>Enchant opponents in the Spellbound Collection Event</h2>
               </div>
             </div>
-            <div class="card">
+            <div class="card card-two">
               <div>
                 <img src="" />
               </div>
@@ -129,7 +220,7 @@
                 <h2>Enchant opponents in the Spellbound Collection Event</h2>
               </div>
             </div>
-            <div class="card">
+            <div class="card card-three">
               <div>
                 <img src="" />
               </div>
@@ -147,11 +238,14 @@
 
       <!-- ========= section four  ========= -->
       <footer class="footer">
+        <div class="section-header">Connect With Us</div>
         <div>
           <i class="uil uil-instagram"></i>
           <i class="uil uil-twitter-alt"></i>
           <i class="uil uil-facebook-f"></i>
           <i class="uil uil-linkedin-alt"></i>
+          <i class="uil uil-discord"></i>
+          <i class="uil uil-telegram-alt"></i>
         </div>
       </footer>
     </div>

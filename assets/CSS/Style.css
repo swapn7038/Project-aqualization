@@ -69,6 +69,7 @@ a {
 .menu {
   width: 100%;
   height: 60px;
+  /* background-color: rgba(0, 0, 0, 0.5); */
   background-color: black;
   display: flex;
   justify-content: space-around;
@@ -199,10 +200,21 @@ section {
   padding: 2rem;
   font-family: MonradokTrial;
   border-bottom: 10px solid red;
+  transition: 0.3s;
 }
 
-.card:hover {
+.card-one:hover {
   background-image: url("../images/gaming-img-1.jpg");
+  background-size: cover;
+}
+
+.card-two:hover {
+  background-image: url("../images/gaming-img-2.jpg");
+  background-size: cover;
+}
+
+.card-three:hover {
+  background-image: url("../images/gaming-img-3.jpg");
   background-size: cover;
 }
 
@@ -212,13 +224,18 @@ section {
 
 .footer {
   width: 100%;
-  height: 8rem;
+  height: 50vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   background-color: #161616;
   color: white;
   transition: 0.4s;
+}
+
+.section-header {
+  /* display: flex; */
 }
 
 .footer i {
@@ -228,23 +245,33 @@ section {
   /* border: 3px solid; */
 }
 
-.footer .uil-instagram:hover {
+.footer .uil-instagram {
   color: #fa7e1e;
 
   cursor: pointer;
 }
 
-.footer .uil-twitter-alt:hover {
+.footer .uil-twitter-alt {
   color: #00acee;
   cursor: pointer;
 }
 
-.footer .uil-facebook-f:hover {
-  color: #3b5998;
+.footer .uil-facebook-f {
+  color: #6294ff;
   cursor: pointer;
 }
 
-.footer .uil-linkedin-alt:hover {
-  color: #3b5998;
+.footer .uil-linkedin-alt {
+  color: #2268ff;
   cursor: pointer;
 }
+
+.uil-discord {
+  color: #7289da;
+}
+
+.uil-telegram-alt {
+  color: #0088cc;
+}
+
+/*  */
