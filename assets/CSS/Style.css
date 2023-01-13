@@ -54,7 +54,7 @@ body {
 .cursor {
   width: 20px;
   height: 20px;
-  border: 2px solid rgb(255, 255, 255);
+  border: 3px solid rgb(255, 255, 255);
   border-radius: 50%;
   position: absolute;
   transition-duration: 200ms;
@@ -67,22 +67,22 @@ body {
   width: 20px;
   height: 20px;
   position: absolute;
-  border: 4px solid rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 50%;
   opacity: 0.5;
-  top: -4px;
-  left: -4px;
+  top: -5px;
+  left: -5px;
   animation: cursorAnimation2 0.5s infinite alternate;
 }
 
 .expand {
   animation: cursorAnimation3 0.5s forwards;
-  border: 1px solid rgb(255, 0, 0);
+  border: 3px solid rgb(255, 0, 0);
 }
 
 @keyframes cursorAnimation {
   from {
-    transform: scale(1.5);
+    transform: scale(1);
     color: rgb(0, 0, 0);
   }
   to {
@@ -93,11 +93,11 @@ body {
 
 @keyframes cursorAnimation2 {
   from {
-    transform: scale(0.8);
+    transform: scale(1.2);
     color: rgb(0, 0, 0);
   }
   to {
-    transform: scale(0.4);
+    transform: scale(1.2);
     color: rgb(0, 0, 0);
   }
 }
@@ -153,7 +153,6 @@ body {
 
 .menu-logo {
   width: 10rem;
-  /* border: 3px solid red; */
   display: grid;
   place-content: center;
 }
@@ -170,8 +169,6 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* display: block; */
-  /* border: 3px solid rgb(255, 255, 255); */
 }
 
 .nav-list {
@@ -180,7 +177,6 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /* border: 2px solid red; */
 }
 
 .nav-list a {
@@ -222,6 +218,7 @@ section {
   display: grid;
   place-content: center;
   font-family: Aromaticdreamdemo;
+  /* border: 3px solid; */
 }
 
 .section-one {
@@ -234,7 +231,6 @@ section {
   background: url("../images/img-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  /* color: rgb(0, 0, 0); */
 }
 
 .section-header {
@@ -258,9 +254,6 @@ section {
   display: flex;
   justify-content: space-evenly;
   transition: 0.5s;
-  /* display: grid; */
-  /* place-content: center; */
-  /* border: 3px solid red; */
 }
 
 .card {
@@ -310,7 +303,6 @@ section {
   font-size: 4rem;
   margin: 0 2rem;
   transition: 0.4s;
-  /* border: 3px solid; */
 }
 
 .footer .uil-instagram {
@@ -343,3 +335,9 @@ section {
 }
 
 /*  */
+
+.section-latest-news {
+  width: 100%;
+  height: 100vh;
+  border: 4px solid;
+}
