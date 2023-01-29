@@ -57,6 +57,7 @@ body {
   border: 3px solid rgb(255, 255, 255);
   border-radius: 50%;
   position: absolute;
+  z-index: 10;
   transition-duration: 200ms;
   transition-timing-function: ease-out;
   animation: cursorAnimation 0.5s infinite alternate;
@@ -118,26 +119,6 @@ body {
 
 /* ===================== cursor css ends ====================== */
 
-.top-nav-menu {
-  width: 100%;
-  height: 2rem;
-  background-color: #161616;
-  display: flex;
-  align-items: center;
-  justify-content: right;
-}
-
-.top-nav-menu ul li a {
-  color: white;
-  margin-right: 10px;
-  font-family: BruceForever;
-  transition: 0.5s;
-}
-
-.top-nav-menu ul li a:hover {
-  color: rgb(214, 83, 54);
-}
-
 .menu {
   width: 100%;
   height: 60px;
@@ -188,6 +169,8 @@ nav {
 
 .nav-list a:hover {
   color: rgb(214, 83, 54);
+  cursor: none;
+  border: 2px aliceblue solid;
 }
 
 .menu-btn {
